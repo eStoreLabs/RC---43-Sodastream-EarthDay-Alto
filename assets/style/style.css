@@ -1,0 +1,307 @@
+html,
+body {
+	font-family: 'Centrale Sans Round', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	overflow-x: hidden;
+	font-size: 14px;
+}
+@media (min-width: 576px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (min-width: 992px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+body {
+	overflow-x: hidden !important;
+	color: #1a1a1a;
+	background: #fafbfe;
+	padding-right: 0 !important;
+}
+strong {
+	font-weight: 600;
+}
+
+.cta {
+	border-radius: 8px;
+	border: none;
+	width: -moz-fit-content;
+	width: fit-content;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 32px;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s ease-out;
+	background: #0082fa;
+	color: #fff;
+	margin-top: 10px;
+	z-index: 1;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+.cta[disabled] {
+	filter: grayscale(100);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.cta:hover {
+	background: #0067c7;
+	color: #fff;
+}
+.cta--outline {
+	border: 1px solid #0082fa;
+	color: #0082fa;
+	background: none;
+}
+.cta--outline:hover {
+	background: #0082fa;
+	color: #fff;
+}
+.cta--secondary {
+	background: #0fd2ff;
+	border: none;
+	color: #fff;
+}
+.cta--secondary:hover {
+	background: #00b2db;
+	color: #fff;
+}
+.cta--secondary--outline {
+	border: 1px solid #0fd2ff;
+	color: #0fd2ff;
+	background: none;
+}
+.cta--secondary--outline:hover {
+	background: #0fd2ff;
+	color: #fff;
+}
+.cta--white {
+	background: #fff;
+	color: #000;
+}
+.cta--white:hover {
+	background: #ccc;
+	color: #000;
+}
+.cta--white--outline {
+	border: 1px solid #fff;
+	color: #fff;
+	background: none;
+}
+.cta--white--outline:hover {
+	background: #fff;
+	color: #000;
+}
+.cta--black {
+	background: #222;
+	color: #fff;
+}
+.cta--black:hover {
+	background: #444;
+	color: #fff;
+}
+.cta--black--outline {
+	border: 1px solid #000;
+	color: #000;
+	background: none;
+}
+.cta--black--outline:hover {
+	background: #000;
+	color: #fff;
+}
+.cta--gray {
+	background: #575757;
+	color: #fff;
+}
+.cta--gray:hover {
+	background: #3d3d3d;
+	color: #fff;
+}
+.cta--gray--secondary {
+	background: #f0f0f0;
+	border: none;
+	color: #666;
+}
+.cta--gray--secondary:hover {
+	background: #e0e0e0;
+	color: #333;
+}
+.cta--gray--outline {
+	border: 1px solid #575757;
+	color: #575757;
+	background: none;
+}
+.cta--gray--outline:hover {
+	background: #575757;
+	color: #fff;
+}
+.cta--violet {
+	background: #8250fa;
+	color: #fff;
+}
+.cta--violet:hover {
+	background: #5f1ef9;
+	color: #fff;
+}
+.cta--violet--secondary {
+	background: #ece5fe;
+	border: none;
+	color: #5f1ef9;
+}
+.cta--violet--secondary:hover {
+	background: #ded1fe;
+	border: none;
+	color: #4606de;
+}
+.cta--violet--outline {
+	border: 1px solid #8250fa;
+	color: #8250fa;
+	background: none;
+}
+.cta--violet--outline:hover {
+	background: #8250fa;
+	color: #fff;
+}
+.cta--pink {
+	background: #fa0064;
+	color: #fff;
+}
+.cta--pink:hover {
+	background: #c70050;
+	color: #fff;
+}
+.cta--pink--outline {
+	border: 1px solid #fa0064;
+	color: #fa0064;
+	background: none;
+}
+.cta--pink--outline:hover {
+	background: #fa0064;
+	color: #fff;
+}
+.cta--pink--secondary {
+	background: #ffe1ed;
+	border: none;
+	color: #c70050;
+}
+.cta--pink--secondary:hover {
+	background: #ffd1e4;
+	border: none;
+	color: #c70050;
+}
+.cta--blue {
+	background: #0fd2ff;
+	color: #fff;
+}
+.cta--blue:hover {
+	background: #00b2db;
+	color: #fff;
+}
+.cta--blue--outline {
+	border: 1px solid #0fd2ff;
+	color: #0fd2ff;
+	background: none;
+}
+.cta--blue--outline:hover {
+	background: #0fd2ff;
+	color: #fff;
+}
+.cta--big {
+	height: 48px;
+	line-height: 48px;
+	padding: 0 34px;
+	font-size: 1.1rem;
+}
+.cta--medium {
+	height: 40px;
+	line-height: 40px;
+	font-size: 1rem;
+}
+.cta--small {
+	height: 40px;
+	padding: 0 24px;
+	font-size: 0.95rem;
+}
+.cta--circle {
+	padding: 0;
+	height: 44px;
+	width: 44px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 600;
+}
+h1 {
+	font-size: 1.8rem;
+}
+@media (min-width: 1400px) {
+	h1 {
+		max-width: unset;
+	}
+}
+h1 br {
+	display: none;
+}
+@media (min-width: 400px) {
+	h1 br {
+		display: initial;
+	}
+}
+h2 {
+	font-size: 1.6rem;
+}
+.section h2 {
+	margin-bottom: 40px;
+}
+h3 {
+	font-size: 1.42rem;
+}
+h4 {
+	font-size: 1.26rem;
+}
+h5 {
+	margin-bottom: 40px;
+	font-size: 1.12rem;
+}
+p {
+	font-weight: 300;
+	color: #4d4d4d;
+	font-size: 1rem;
+}
+
+.box-shadow {
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.alto_logo img {
+	height: 35px;
+	margin: 10px 20px 10px 20px;
+	cursor: pointer;
+}
+@media (min-width: 1100px) {
+	.alto_logo img {
+		height: 60px;
+		margin: 15px 80px 15px 80px;
+		
+	}
+}
