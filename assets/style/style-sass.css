@@ -121,7 +121,7 @@
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: start;
-  justify-content: start;
+  justify-content: flex-start;
   max-width: 100%;
   margin: 0 auto;
   padding-top: 60px;
@@ -307,6 +307,12 @@
   font-size: 12px;
   text-align: center;
   color: #13294b;
+}
+#es-rc #es-rc-content .es-change__disclaimer--mobile {
+  display: block;
+}
+#es-rc #es-rc-content .es-change__disclaimer--desktop {
+  display: none;
 }
 #es-rc #es-rc-content .swiper-pagination-bullet {
   background-color: #afafaf;
@@ -568,6 +574,12 @@
   #es-rc #es-rc-content .es-change__single-inner-2 {
     -webkit-box-align: center;
     align-items: center;
+  }
+  #es-rc #es-rc-content .es-change__disclaimer--mobile {
+    display: none;
+  }
+  #es-rc #es-rc-content .es-change__disclaimer--desktop {
+    display: block;
   }
   #es-rc #es-rc-content .es-video {
     height: auto;

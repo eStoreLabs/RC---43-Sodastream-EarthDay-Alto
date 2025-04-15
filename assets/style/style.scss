@@ -168,7 +168,7 @@ $secondary: #002238;
       -webkit-box-align: center;
       align-items: center;
       -webkit-box-pack: start;
-      justify-content: start;
+      justify-content: flex-start;
       max-width: 100%;
       margin: 0 auto;
       padding-top: 60px;
@@ -385,6 +385,14 @@ $secondary: #002238;
       font-size: 12px;
       text-align: center;
       color: $primary;
+
+      &--mobile {
+        display: block;
+      }
+
+      &--desktop {
+        display: none;
+      }
     }
   }
 
@@ -726,6 +734,17 @@ $secondary: #002238;
         -webkit-box-align: center;
         align-items: center;
       }
+
+      &__disclaimer {
+        &--mobile {
+          display: none;
+        }
+  
+        &--desktop {
+          display: block;
+        }
+      }
+  
     }
 
     .es-video {
